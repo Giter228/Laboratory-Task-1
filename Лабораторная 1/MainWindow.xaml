@@ -1,0 +1,36 @@
+﻿<Window x:Class="Лабораторная_1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Лабораторная_1"
+        mc:Ignorable="d"
+        Title="Лабораторная работа №1" Height="450" Width="800" Icon="https://img.icons8.com/ios-filled/256/laboratory.png">
+    <Grid>
+        <TabControl>
+            
+            <TabItem x:Name="Guilds" Header="Цехи">
+                <TabItem.Content>
+                    <DataGrid x:Name="GuildDataGrid" CanUserAddRows="False" AutoGeneratingColumn="GuildDataGrid_AutoGeneratingColumn">
+                        <DataGrid.Columns>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </TabItem.Content>
+            </TabItem>
+
+            <TabItem x:Name="Employees" Header="Сотрудники">
+                <TabItem.Content>
+                    <DataGrid x:Name="EmployeeDataGrid"  CanUserAddRows="False" AutoGeneratingColumn="EmployeeDataGrid_AutoGeneratingColumn"/>
+                </TabItem.Content>
+            </TabItem>
+            
+            <TabItem x:Name="Details" Header="Детали">
+                <TabItem.Content>
+                    <DataGrid x:Name="DetailDataGrid" CanUserAddRows="False" AutoGeneratingColumn="DetailDataGrid_AutoGeneratingColumn"/>
+                </TabItem.Content>
+            </TabItem>
+            
+        </TabControl>
+
+    </Grid>
+</Window>
